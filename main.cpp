@@ -77,11 +77,11 @@ int main()
 
 			mRelX = mRelX / Faktor_pxToMM;
 			mRelY = mRelY / Faktor_pyToMM;
-//			alpha = alpha + mRelY / radius;
-//			abs_X = abs_X - mRelX * sin(alpha);
-//			abs_Y = abs_Y + mRelX * cos(alpha);
-			abs_X += mRelX;
-			abs_Y += mRelY;
+			alpha = alpha + mRelY / radius;
+			abs_X = abs_X - mRelX * sin(alpha);
+			abs_Y = abs_Y + mRelX * cos(alpha);
+//			abs_X += mRelX;
+//			abs_Y += mRelY;
 
 			cout << "raw value X: "<< rawX << "\t raw value Y: "<< rawY<<endl;
 			cout<<"Absolute pos. X: "<<abs_X<<"mm\tAbsolute pos. Y = "<<abs_Y<<"mm\t";
